@@ -36,8 +36,13 @@
 
 .f-flex {
     display: flex;
-    gap: 26px;
+    gap: 24px;
     padding-bottom: 16px;
+}
+
+.f-flex-2 {
+    display: flex;
+    gap: 30px; 
 }
 
 .f-flex button {
@@ -70,4 +75,72 @@
     line-height: 24px;
     letter-spacing: 0%;
     color: #12100CB2;
+}
+
+.feature-right {
+    width: 50%;
+}
+
+.feature-right img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+@media (max-width: 1100px) {
+    .feature-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-left * {
+        text-align: center;
+    }
+
+    .f-flex, .f-flex-2 {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 700px) {
+    .f-h h1 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .f-h p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .f-flex button {
+        padding: 10px 30px;
+        font-size: 16px;
+    }
+
+    .feature-right img {
+        width: 100%;
+    }
+}   
+
+@media (max-width: 400px) {
+    .f-h h1 {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .f-h p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .f-flex button {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+
+    .f-flex {
+        flex-direction: column;
+        align-items: center; 
+    }
 }
